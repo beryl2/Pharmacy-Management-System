@@ -1,0 +1,18 @@
+{% extends "main_site/base.html" %}
+{% load static %}
+
+{% block head_block %}
+
+{% endblock head_block %}
+
+{% block context_block %}
+    <div class="login">
+        <form>
+            <h3>LOG IN FORM</h3>
+            {{ crsf_token }}
+            
+            <input type="button" value="sign in">
+            
+        </form>
+    </div>
+{% endblock context_block %}

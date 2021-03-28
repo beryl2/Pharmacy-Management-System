@@ -1,0 +1,27 @@
+{% extends 'main_site/base.html' %}
+{% load static %}
+
+{% block head_block %}
+<title>medicine html</title>
+{% endblock head_block %}
+
+{% block context_block %}
+
+<p>This is for <span style="color: red;">loop</span></p>
+
+    {% for med in medicine %}
+        <table>
+            <tr>
+                <th>Medicine Type</th>
+                <th>Batch NO</th>
+            </tr>
+            <tr>
+                <td>{{ med.medeical_type }}</td>
+                <td>{{ med.all }}</td>
+            </tr>
+        </table>
+
+{% endfor %}
+
+{% endblock context_block%}
+
