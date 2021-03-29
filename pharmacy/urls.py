@@ -9,5 +9,6 @@ from main_app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.loginPage),
+    path('/index', views.indexView, name='home'),
     
 ]
