@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "env\\Scripts\\python.exe",
+    "python.pythonPath": "/home/layersony/Desktop/beryl/virtualenv/beryl/bin/python",
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true
 }
