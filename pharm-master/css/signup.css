@@ -1,0 +1,54 @@
+
+.img{
+background-image:url("projectbackground.jpg");
+}
+
+
+h1{
+text-align:center;
+padding:38px 0px 8px 0px;
+font-weight:bold;
+}
+
+
+h2{
+text-align:center;
+}
+
+body {
+margin:0;
+padding:0;
+box-sizing:border-box; 
+}
+
+.box {
+border:2px solid black;  
+border-radius: 2px; 
+padding:32px;
+margin:0px 480px 0px 490px;
+background-color:white;
+}
+
+.box input[type="text"], .box input[type="password"] {
+width:83%;
+padding:9.7px;
+border:none;
+border-bottom: 1px solid #AAA;	
+margin-bottom:20px;
+margin-left:16px;
+}
+
+.btn{   
+color:white;
+font-size:15px;
+background-color:green;
+border:none;
+padding:15px 25px;
+margin-left: 115px;
+margin-bottom:4px;
+}
+
+p{
+text-align:center;
+}
+

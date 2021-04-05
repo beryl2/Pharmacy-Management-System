@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>M8 Pharmacy</title>
+    <link rel="icon" type="image/png" href="./images/favicon.ico"  sizes="16x16" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <!-- materiliaze design for bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="view landing">
+          <div id="overlay">
+              <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+                <a class="navbar-brand" href="index.html">Pharmacy Management System</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse align-items-center" id="collapsibleNavbar">
+                  <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link" href="#overlay">Home</a>
+                        </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#make-order">Shop Now</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>    
+                  </ul>
+                </div>  
+              </nav>
+              <div class="mask rgba-black-light align-items-center">
+                <div class="container" id="head">
+                  <div class="row">
+                    <div class="col-md-12 mb-4 white-text text-center text">
+                      <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 pulse"><strong>M8 PHARMA SHOP</strong></h1>
+                      <a class="btn btn-red button floater" href="#make-order"> WELCOME TO PHARMA SHOP </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="arrow bounce"> <a href="#variety"> <img src="./images/arrow.ico" alt=" arrow"width="40px"></a></div>
+          </div>
+        </div>
+      </header>
+
+      <!-- slogan section -->
+      <div class="container carousel slide" data-ride="carousel"  id="slogan">
+        <div class="row">
+          <div class="col-md-12  black-text text-center text">
+              <h2>EXCLUSIVELY PRESCRIBED DRUGS</h2>
+            <p>
+              SHOP NOW
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- product section -->
+      <div class="container carousel slide carousel-multi-item" data-ride="carousel" id="variety">
+        <div class="controls-top "> 
+          <h2>POPULAR PRODUCTS</h2>
+        </div>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <div class="col-md-4">
+              <div class="card mb-2">
+                <img class="card-img-top" src="./images/biodema.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Bioderma</h5>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-4">
+              <div class="card mb-2">
+                <img class="card-img-top" src="./images/chanca.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title"> Chanca Piedra</h5>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-4">
+              <div class="card mb-2">
+                <img class="card-img-top" src="./images/umcka.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Umcka Cold Care</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-md-4">
+              <div class="card mb-2">
+                <img class="card-img-top" src="./images/cetyl.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Cetyl Pure</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-2">
+                <img class="card-img-top" src="./images/CLA core.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">CLA Core</h5>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-4">
+              <div class="card mb-2">
+                <img class="card-img-top" src="./images/poo pouri.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title"> Poo Pourri </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+      <!-- order section -->
+
+      <div class="container-fluid order" id="make-order">
+        <div class="order-overlay">
+          <div class="controls-top text-center" id="Order-now"> 
+            <h2>Make an Order</h2>
+          </div>
+          <div class="row">
+              <div class="col-sm-5">
+                <form action="">
+                    <label for="select">Select Your Drug</label>
+                    <select class="browser-default custom-select custom-select-md mb-3 name" id="name">
+                      <!-- <option selected value="choose">Choose your flavor</option> -->
+                      <option value="cetyl">Cetyl Pure</option>
+                      <option value="biordema">Bioderma</option>
+                      <option value="chanca">Chanca Piedra</option>
+                      <option value="umcka>Umcka Cold Care</option>
+                      <option value="CLA">CLA Core</option>
+                      <option value="poo">Poo Pourri</option>
+                    </select>
+                  <label for="select">Select Type</label>
+                  <select class="browser-default custom-select custom-select-md mb-3" id="size">
+                    <option selected value="0">Select type here</option>
+                    <option value="antipyretics">Antipyretics -- sh. 1500</option>
+                    <option value="antibiotics">Antibiotics -- sh. 950</option>
+                    <option value="antiseptics">Antiseptics -- sh. 650</option>
+                  </select>
+                  <label for="crust">Choose other:</label>
+                    <select class="browser-default custom-select custom-select-md mb-3" id="crust">
+                        <option selected value="0">Select your preferred med!</option>
+                      <option value="pain">Pain Killer --- sh. 300</option>
+                      <option value="relaxer">Relaxer --- sh. 200</option>
+                      <option value="stress">Stress Meds --- sh. 250</option>
+                      <option value="stimulants">Stimulants --- sh. 300</option>
+                      <option value="inhalants">Inhalants --- sh. 200</option>
+                    </select>
+                  
+                  
+                </form>
+              </div>
+              <div class="col-sm-7">
+                <div id="infor">
+                    <h1 class="h6-reponsive white-text text-lowercase pulse">Check Here</h6>
+                </div>
+                
+                <div class="delivery"> 
+                    <form action="" id="form">
+                      <div class="form-group">
+                        <input type="text" id="name" class="form-control mb-3" placeholder="Name">
+                        <input type="number" id="phone" class="form-control mb-3" placeholder="Phone Number">
+                        <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
+                        <button class="btn btn-secondary bg-secondary " id="final-order">Confirm Order</button>
+                      </div>
+                    </form>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container map">
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="1200" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=ngong%20road&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.bitgeeks.net/embed-google-map/">bitgeeks.net</a></div><style>.mapouter{position:relative;text-align:right;height:300px;width:1200px;}.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:1200px;}</style></div>
+      </div>
+      
+      <!-- contact section -->
+      <div class="container-fluid" id="contact">
+        <div class="controls-top "> 
+            <h2>Contact Us</h2>
+          </div>
+        <div class="row" id="contactdetails">
+          <div class="col-md-4">
+            <img src="https://img.icons8.com/ios-filled/50/000000/link-company-parent.png">
+            <p>Junction Mall</p>
+             <p>M8 Pharmacy Plaza</p>
+             <p>KKN Plaza</p>
+          </div>
+          <div class="col-md-3 text-justify">
+            <img src="https://img.icons8.com/pastel-glyph/64/000000/place-marker.png">
+            <p>M8 Pharmacy Plaza</p>
+            <p>Lamu Road | Ngong Road</p>
+            <p>00201,Nairobi-Kenya </p>
+          </div>
+          <div class="col-md-3">
+            <img src="https://img.icons8.com/ios-filled/50/000000/add-contact-to-company.png">
+             <p>berylakinyi150@gmail.com</p>
+             <p>Tell: 0788913277</p> 
+             <p>Phone: +254 706445341</p>
+          </div>
+          <div class="col-md-4">
+            
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+          <div class="container text-center footer">
+            <p>&copy; 2021 | M8 PHARMA SHOP</p>
+          </div>
+        </div>
+    </div>
+
+    <script src="js/mdb.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
